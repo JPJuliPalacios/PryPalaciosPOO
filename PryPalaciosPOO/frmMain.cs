@@ -16,5 +16,33 @@ namespace PryPalaciosPOO
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            ClassPersonaje objeto = new ClassPersonaje();
+            objeto.nombre =  txtNombre.Text;
+            objeto.fuerza = Convert.ToInt32(txtFuerza.Text);
+            objeto.destreza = int.Parse(txtFuerza.Text);
+
+            lblInfo.Text=objeto.nombre+"-"+
+              objeto.fuerza+"-"+
+              objeto.destreza + "\n";
+
+        }
     }
 }
